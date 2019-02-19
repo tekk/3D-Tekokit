@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+.letterDrop {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase; 
+  letter-spacing: -3em;
+  top: -100px;
+  opacity: 0.5;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+}
+
+@keyframes letterDrop {
+    10% {
+        top: -300px;
+        opacity: 0.5;
+        letter-spacing: -5em;
+    }
+    20% {
+        opacity: 0.8;
+        top: 50px;
+        transform: rotateX(-360deg);
+        letter-spacing: 0.2em;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+        transform: rotateX(360deg);
+        letter-spacing: -0.1em;
+    }
+}
+
+span:nth-child(2n) {
+  color: #666;
+}
